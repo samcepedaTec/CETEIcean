@@ -4,6 +4,15 @@
         <meta charset="UTF-8>
         <meta name="viewport" content="widht=device-width", init-scale="1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylrsheet" href="css/tei.css">
+            <script src="js/CETEI.js"></scriot></script>
+            <script>
+                let c = new CETEI();
+                c.getHTML5('Ruy_Diaz-La_Argentina_Manuscrita.xml', function(data)
+                    {
+                document.getElementsByTagName("body")[0].appendChild(data);
+                    });
+</script>
     </head>
     <body>
         
